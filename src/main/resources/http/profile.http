@@ -1,0 +1,45 @@
+POST http://localhost:8080/profile/adm/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjEwMTQ3OTksImV4cCI6MTY2MTIzMDc5OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoyLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.cP9t9Hc2Mo3OWQViBETaZegrpCYEuS2OGoX95UbnkDI
+
+{
+  "name": "Sardor",
+  "surname": "Sardorov",
+  "email": "sadik",
+  "phone": "+998972198989",
+  "password": "2225",
+  "role" : "ROLE_USER"
+}
+
+###
+
+PUT http://localhost:8080/profile/user/nameAndSurnameUpdate
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjEwMTUxNjksImV4cCI6MTY2MTIzMTE2OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo5LCJyb2xlIjoiUk9MRV9VU0VSIn0.YapV9JZ0XTMKoXvnlI8EPIefYFXFFRyq47mpFdKMto0
+
+{
+  "name": "Valijon",
+  "surname": "Valijonov"
+}
+
+###
+
+PUT http://localhost:8080/profile/user/passswordUpdate
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjEwMTUxNjksImV4cCI6MTY2MTIzMTE2OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo5LCJyb2xlIjoiUk9MRV9VU0VSIn0.YapV9JZ0XTMKoXvnlI8EPIefYFXFFRyq47mpFdKMto0
+
+{
+  "password": "123"
+}
+
+
+###
+
+GET localhost:8080/profile/adm/list/USER
+Authorization: Basic 1 123
+
+
+###
+
+DELETE http://localhost:8080/profile/delete/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NjEwMTUxNjksImV4cCI6MTY2MTIzMTE2OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo5LCJyb2xlIjoiUk9MRV9VU0VSIn0.YapV9JZ0XTMKoXvnlI8EPIefYFXFFRyq47mpFdKMto0

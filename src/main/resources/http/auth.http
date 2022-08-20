@@ -1,0 +1,71 @@
+POST http://localhost:8080/auth/registration
+Content-Type: application/json
+#Authorization: Bearer
+
+{
+  "name": "Sawash",
+  "surname": "Sawashov",
+  "email": "agent007@gmail.com",
+  "phone": "998970070777",
+  "password": "1245"
+}
+###
+
+POST http://localhost:8080/auth/registration
+Content-Type: application/json
+#Authorization: Bearer
+
+{
+  "name": "Sawashbek",
+  "surname": "Sawashovv",
+  "email": "malikovbehzod2001@gmail.com",
+  "phone": "998914640908",
+  "password": "1565"
+}
+
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "agent007@gmail.com",
+  "password": "1245"
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "malikovbehzod2001@gmail.com",
+  "password": "1565"
+}
+
+###
+
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.uz",
+  "password": "123"
+}
+
+###
+
+POST http://localhost:8080/auth/verification
+Content-Type: application/json
+
+{
+  "phone": "972199898",
+  "code": 1245
+}
+
+###
+
+POST http://localhost:8080/auth/email/verification/15
+Content-Type: application/json
